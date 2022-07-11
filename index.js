@@ -51,7 +51,7 @@ app.get("/zipcode", (req, res) => {
           name,
           sys,
         };
-
+        console.log(weatherData);
         res.status(200).json(weatherData);
       });
     });

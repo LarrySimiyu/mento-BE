@@ -4,7 +4,7 @@ const axios = require("axios");
 const getLocalLonLat = () => {
   return axios
     .get(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=95821&key=${process.env.GOOGLE_API}`
+      `https://maps.googleapis.com/maps/api/geocode/json?address=95814&key=${process.env.GOOGLE_API}`
     )
     .then(({ data }) => {
       const { location } = data.results[0].geometry;
